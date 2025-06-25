@@ -1,0 +1,14 @@
+[25-Jun-2025 15:58:54 UTC] PHP Fatal error:  Uncaught Error: Class "WpOrg\Requests\Utility\InputValidator" not found in /home1/otaode69/public_html/wp-includes/Requests/src/Requests.php:635
+Stack trace:
+#0 /home1/otaode69/public_html/wp-includes/class-wp-http.php(14): WpOrg\Requests\Requests::set_certificate_path('/home1/otaode69...')
+#1 /home1/otaode69/public_html/wp-settings.php(268): require('/home1/otaode69...')
+#2 /home1/otaode69/public_html/wp-admin/setup-config.php(33): require('/home1/otaode69...')
+#3 {main}
+  thrown in /home1/otaode69/public_html/wp-includes/Requests/src/Requests.php on line 635
+[25-Jun-2025 16:02:54 UTC] PHP Fatal error:  Uncaught Error: Class "WpOrg\Requests\Utility\InputValidator" not found in /home1/otaode69/public_html/wp-includes/Requests/src/Requests.php:635
+Stack trace:
+#0 /home1/otaode69/public_html/wp-includes/class-wp-http.php(14): WpOrg\Requests\Requests::set_certificate_path('/home1/otaode69...')
+#1 /home1/otaode69/public_html/wp-settings.php(268): require('/home1/otaode69...')
+#2 /home1/otaode69/public_html/wp-admin/setup-config.php(33): require('/home1/otaode69...')
+#3 {main}
+  thrown in /home1/otaode69/public_html/wp-includes/Requests/src/Requests.php on line 635
