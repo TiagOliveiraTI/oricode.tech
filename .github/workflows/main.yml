@@ -13,27 +13,29 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 2  # Para comparar com commit anterior
     
-    - name: 📂 Install LFTP
-      run: sudo apt-get update && sudo apt-get install -y lftp
-    
-    - name: 🚀 Deploy to FTP
-      env:
-        FTP_SERVER: ${{ secrets.FTP_SERVER }}
-        FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
-        FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-      run: |
-        lftp -c "
-          set ssl:verify-certificate false;
-          set ftp:ssl-allow true;
-          set ftp:ssl-force false;
-          set net:reconnect-interval-base 5;
-          set net:max-retries 5;
-          set net:timeout 30;
-          set ftp:passive-mode true;
-          open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_SERVER;
-          lcd ${{ github.workspace }};
-          cd /;
-          mirror -Rev --delete --verbose --exclude-glob .git/ --exclude-glob .github/ --exclude-glob node_modules/ --exclude-glob '*.log';
-          quit
-        "
+    - name: 📂 FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: /
+        protocol: ftp
+        port: 21
+        timeout: 1800000
+        log-level: verbose
+        dry-run: false
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.DS_Store
+          **/Thumbs.db
+          **/*.log
+          **/logs.txt
+          **/wp-content/uploads/**
+          **/wp-content/cache/**
+          **/wp-content/backup*/**
