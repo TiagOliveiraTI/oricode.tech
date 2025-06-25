@@ -1,0 +1,38 @@
+# Define services
+services:
+  # WordPress Service
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - "8080:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: oricode_user
+      WORDPRESS_DB_PASSWORD: oricode_password
+      WORDPRESS_DB_NAME: oricode_db
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - db
+    restart: always
+
+  # MySQL Service
+  db:
+    image: mysql:8.0
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: oricode_db
+      MYSQL_USER: oricode_user
+      MYSQL_PASSWORD: oricode_password
+      MYSQL_ROOT_PASSWORD: oricode_password
+    restart: always
+    command: '--default-authentication-plugin=mysql_native_password'
+    security_opt:
+      - seccomp:unconfined
+
+# Define named volumes
+volumes:
+  db_data:
+    driver: local
+
