@@ -1,0 +1,45 @@
+[25-Jun-2025 12:38:22 America/Fortaleza] PHP Warning:  require(/home1/otaode69/public_html/wp-includes/version.php): Failed to open stream: No such file or directory in /home1/otaode69/public_html/wp-settings.php on line 33
+[25-Jun-2025 12:38:22 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/otaode69/public_html/wp-includes/version.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/otaode69/public_html/wp-settings.php:33
+Stack trace:
+#0 /home1/otaode69/public_html/wp-config.php(141): require_once()
+#1 /home1/otaode69/public_html/wp-load.php(50): require_once('/home1/otaode69...')
+#2 /home1/otaode69/public_html/wp-blog-header.php(13): require_once('/home1/otaode69...')
+#3 /home1/otaode69/public_html/index.php(17): require('/home1/otaode69...')
+#4 {main}
+  thrown in /home1/otaode69/public_html/wp-settings.php on line 33
+[25-Jun-2025 12:40:49 America/Fortaleza] PHP Warning:  require(/home1/otaode69/public_html/wp-includes/version.php): Failed to open stream: No such file or directory in /home1/otaode69/public_html/wp-settings.php on line 33
+[25-Jun-2025 12:40:49 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/otaode69/public_html/wp-includes/version.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/otaode69/public_html/wp-settings.php:33
+Stack trace:
+#0 /home1/otaode69/public_html/wp-config.php(141): require_once()
+#1 /home1/otaode69/public_html/wp-load.php(50): require_once('/home1/otaode69...')
+#2 /home1/otaode69/public_html/wp-blog-header.php(13): require_once('/home1/otaode69...')
+#3 /home1/otaode69/public_html/index.php(17): require('/home1/otaode69...')
+#4 {main}
+  thrown in /home1/otaode69/public_html/wp-settings.php on line 33
+[25-Jun-2025 12:42:51 America/Fortaleza] PHP Warning:  require(/home1/otaode69/public_html/wp-includes/version.php): Failed to open stream: No such file or directory in /home1/otaode69/public_html/wp-settings.php on line 33
+[25-Jun-2025 12:42:51 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/otaode69/public_html/wp-includes/version.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/otaode69/public_html/wp-settings.php:33
+Stack trace:
+#0 /home1/otaode69/public_html/wp-config.php(141): require_once()
+#1 /home1/otaode69/public_html/wp-load.php(50): require_once('/home1/otaode69...')
+#2 /home1/otaode69/public_html/wp-blog-header.php(13): require_once('/home1/otaode69...')
+#3 /home1/otaode69/public_html/index.php(17): require('/home1/otaode69...')
+#4 {main}
+  thrown in /home1/otaode69/public_html/wp-settings.php on line 33
+[25-Jun-2025 12:45:46 America/Fortaleza] PHP Warning:  require(/home1/otaode69/public_html/wp-includes/version.php): Failed to open stream: No such file or directory in /home1/otaode69/public_html/wp-settings.php on line 33
+[25-Jun-2025 12:45:46 America/Fortaleza] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/otaode69/public_html/wp-includes/version.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/otaode69/public_html/wp-settings.php:33
+Stack trace:
+#0 /home1/otaode69/public_html/wp-config.php(141): require_once()
+#1 /home1/otaode69/public_html/wp-load.php(50): require_once('/home1/otaode69...')
+#2 /home1/otaode69/public_html/wp-blog-header.php(13): require_once('/home1/otaode69...')
+#3 /home1/otaode69/public_html/index.php(17): require('/home1/otaode69...')
+#4 {main}
+  thrown in /home1/otaode69/public_html/wp-settings.php on line 33
+[25-Jun-2025 15:50:13 UTC] PHP Warning:  require(/home1/otaode69/public_html/wp-includes/pomo/mo.php): Failed to open stream: No such file or directory in /home1/otaode69/public_html/wp-settings.php on line 119
+[25-Jun-2025 15:50:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home1/otaode69/public_html/wp-includes/pomo/mo.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home1/otaode69/public_html/wp-settings.php:119
+Stack trace:
+#0 /home1/otaode69/public_html/wp-config.php(141): require_once()
+#1 /home1/otaode69/public_html/wp-load.php(50): require_once('/home1/otaode69...')
+#2 /home1/otaode69/public_html/wp-blog-header.php(13): require_once('/home1/otaode69...')
+#3 /home1/otaode69/public_html/index.php(17): require('/home1/otaode69...')
+#4 {main}
+  thrown in /home1/otaode69/public_html/wp-settings.php on line 119
