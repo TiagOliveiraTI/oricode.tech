@@ -21,6 +21,8 @@ services:
     image: mysql:8.0
     volumes:
       - db_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
     environment:
       MYSQL_DATABASE: oricode_db
       MYSQL_USER: oricode_user
